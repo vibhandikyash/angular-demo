@@ -1,0 +1,39 @@
+.text {
+    text-align: center;
+    padding: 100px;
+}
+
+a{
+    font-size: 30px;
+}
+
+.text-selectexample{
+    padding: 150px;
+}
+
+.img{
+    height: 1100px;
+    background: #d0f0f1;
+
+    .btn-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .mr {
+        margin-right: 15px;
+    }
+    button {
+        background: #d59f57;
+        border: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        height: 40px;
+        width: 140px;
+        cursor: pointer;
+    }
+}
+.select{
+    padding-bottom: 100px;
+}
