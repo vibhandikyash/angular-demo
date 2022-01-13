@@ -1,0 +1,29 @@
+<section class="img">
+
+    <div class="text">
+        <a>Dummy Image Example</a>
+    </div>
+
+    <div class="text">
+        <img [src]="'https://dummyimage.com/300x400/000/fff&text=dummy+valid+image'" appHandleImageError class="mr">
+        <img [src]="" appHandleImageError>
+    </div>
+
+
+    <div class="btn-wrapper">
+        <button value="User Data" routerLink="/users/users-data" class="userdataclass"> User Data </button>
+
+        <button appScrollToElement scrollElementName="footer" id="btn" value="Scroll To Bottom"> Scroll To Bottom </button>
+    </div>
+
+
+</section>
+
+<div id="footer" class="text-selectexample">
+    <h2>Navigated To Bottom ... </h2>
+    <a id="select-dropdown">Select Dropdown Example</a>
+    <div class="select">
+        <ng-select [items]="userData" [virtualScroll]="true" (scrollToEnd)="scrollToEnd()" bindLabel="firstName" bindValue="id" placeholder="Select Name" [(ngModel)]="selectedId">
+        </ng-select>
+    </div>
+</div>
